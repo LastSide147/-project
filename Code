@@ -1,0 +1,36 @@
+cout << "Enter number: ";
+        while(cin >> a)
+        {
+            static double min = a;
+            static double max = a;
+            if(a < min) min = a;
+            if(a > max) max = a;
+                cout << "Input value: " << a << '\n';
+                cout << "The Minimum value entered: " << min << '\n';
+                cout << "The Maximum value entered: " << max << '\n';
+                cout << "----------------------------------" << '\n';
+        }
+////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////        
+        
+double b;
+    char unit = ' ';
+    constexpr double m_in_cm = 100;
+    constexpr double in_in_cm = 1.54;
+    constexpr double ft_in_cm = 18.48;
+        cout << "Enter numbers and unit(metr(m), foots(f), inch(i)): ";
+        cin >> a >> unit;
+    switch(unit)
+    {
+    case 'm':
+            cout << b << "(" << unit << ")" << " = " << b*m_in_cm << "(" << "cm" << ")" << '\n';
+    break;
+    case 'i':
+        cout << b << "(" << unit << ")" << " = " << b*in_in_cm << "(" << "cm" << ")" << '\n';
+        break;
+    case 'f':
+        cout << b << "(" << unit << ")" << " = " << b*ft_in_cm << "(" << "cm" << ")" << '\n';
+        break;
+    default:
+        cout << "Not yet" << '\n';
+    }
+    //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
